@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- PRIMARY SEO METATAGS -->
+    <title>Maruvarthai Pesathe Single Version Lyrics Meaning | English & Malayalam Translation</title>
+    <meta name="description" content="Complete line-by-line translation and profound meaning of the rare 2017 single promotional version of Maruvarthai Pesathe from Enai Noki Paayum Thota in English and Malayalam.">
+    <meta name="keywords" content="maruvarthai pesathe lyrics meaning, maruvarthai pesathe english translation, maruvarthai pesathe malayalam meaning, madi meethu nee thoongidu lyrics, thamarai promotional version lyrics, enai noki paayum thota, lyrical translation">
+    <meta name="robots" content="index, follow">
+    
+    <!-- OPEN GRAPH (FOR SOCIAL MEDIA SHARING) -->
+    <meta property="og:title" content="Maruvarthai Pesathe Lyrics Meaning | Interactive Line-by-Line Translation">
+    <meta property="og:description" content="Explore the beautiful line-by-line translation of the promotional version of Maruvarthai Pesathe in English and Malayalam. Click lines to unlock the depth.">
+    <meta property="og:type" content="website">
+    
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Inter:wght@300;400;600&family=Gayathri:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-color: #0b0c10;
+            --card-bg: #1f2833;
+            --accent-gold: #c5a059;
+            --text-main: #c5c6c7;
+            --text-light: #ffffff;
+            --text-malayalam: #66fcf1;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 20px 40px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-family: 'Cinzel', serif;
+            color: var(--text-light);
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+            text-shadow: 0px 4px 10px rgba(197, 160, 89, 0.2);
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            color: var(--accent-gold);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 20px;
+        }
+
+        .meta-desc {
+            font-size: 0.95rem;
+            max-width: 600px;
+            margin: 0 auto;
+            color: #8f9499;
+        }
+
+        .controls {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .btn {
+            background: transparent;
+            border: 1px solid var(--accent-gold);
+            color: var(--accent-gold);
+            padding: 10px 24px;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.9rem;
+            font-weight: 600;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            background: var(--accent-gold);
+            color: var(--bg-color);
+            box-shadow: 0 0 15px rgba(197, 160, 89, 0.4);
+        }
+
+        .lyrics-container {
+            max-width: 700px;
+            margin: 0 auto 80px;
+        }
+
+        .stanza {
+            margin-bottom: 35px;
+            background: rgba(31, 40, 51, 0.4);
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 3px solid var(--accent-gold);
+        }
+
+        .lyric-row {
+            padding: 14px 10px;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background 0.2s ease;
+            position: relative;
+        }
+
+        .lyric-row:hover {
+            background: rgba(197, 160, 89, 0.1);
+        }
+
+        .tamil-line {
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: var(--text-light);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .tamil-line::after {
+            content: '+';
+            color: var(--accent-gold);
+            font-size: 1.2rem;
+            transition: transform 0.3s ease;
+        }
+
+        .lyric-row.active .tamil-line::after {
+            content: '−';
+            transform: rotate(180deg);
+        }
+
+        .translation-block {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s cubic-bezier(0, 1, 0, 1);
+            opacity: 0;
+        }
+
+        .lyric-row.active .translation-block {
+            max-height: 500px; /* arbitrary large value for smooth expand */
+            opacity: 1;
+            transition: max-height 0.4s cubic-bezier(1, 0, 1, 0);
+            padding-top: 10px;
+            margin-top: 5px;
+            border-top: 1px dashed rgba(255,255,255,0.1);
+        }
+
+        .eng-tl {
+            font-size: 0.95rem;
+            color: #a8b2bd;
+            font-style: italic;
+            margin-bottom: 4px;
+        }
+
+        .mal-tl {
+            font-family: 'Gayathri', sans-serif;
+            font-size: 1.05rem;
+            color: var(--text-malayalam);
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            border-top: 1px solid rgba(255,255,255,0.05);
+            font-size: 0.85rem;
+            color: #666;
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 1.8rem; }
+            body { padding: 10px; }
+            .stanza { padding: 12px; }
+            .tamil-line { font-size: 1rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>MARUVAARTHAI PESATHE</h1>
+        <div class="subtitle">The Rare Single Version Meaning</div>
+        <p class="meta-desc">
+            An interactive, complete line-by-line translation of Thamarai's original 2017 promotional cut lyrics from <em>Enai Noki Paayum Thota</em>. Tap any line to unlock its hidden depths.
+        </p>
+    </header>
+
+    <div class="controls">
+        <button class="btn" id="toggleAllBtn">Expand All Meanings</button>
+    </div>
+
+    <main class="lyrics-container">
+
+        <!-- STANZA 1 -->
+        <div class="stanza">
+            <div class="lyric-row">
+                <div class="tamil-line">1. Maru Vaarthai Paesaathe, Madi Meethu Nee Thoongidu</div>
+                <div class="translation-block">
+                    <p class="eng-tl">Don't say another word, just lie down on my lap and sleep.</p>
+                    <p class="mal-tl">ഇനി ഒരു വാക്ക് പോലും മിണ്ടരുതേ, നീ എന്റെ മടിയിൽ കിടന്നുറങ്ങൂ.</p>
+                </div>
+            </div>
+            
+            <div class="lyric-row">
+                <div class="tamil-line">2. Imai Pola Naan Kaakka, Kanavaai Nee Maaridu</div>
+                <div class="translation-block">
+                    <p class="eng-tl">So that my eyelids may protect you like a guard, you just turn into a dream.</p>
+                    <p class="mal-tl">കൺപീലികൾ പോലെ ഞാൻ നിന്നെ കാത്തുരക്ഷിക്കാം, നീ ഒരു കനവായി (സ്വപ്നമായി) മാറിക്കൊള്ളൂ.</p>
+                </div>
+            </div>
+
+            <div class="lyric-row">
+                <div class="tamil-line">3. Mayil Thogai Pole Viral Unnai Varudum</div>
+                <div class="translation-block">
+                    <p class="eng-tl">Like the soft feathers of a peacock, my fingers will gently caress you.</p>
+                    <p class="mal-tl">മയിൽപ്പീലി പോലെ എന്റെ വിരലുകൾ നിന്നെ തഴുകിത്തലോടും.</p>
+                </div>
+            </div>
+
+            <div class="lyric-row">
+                <div class="tamil-line">4. Manam Paadamaai Uraiyaadal Nigazhum</div>
+                <div class="translation-block">
+                    <p class="eng-tl">As if completely rehearsed by heart, our conversations shall flow effortlessly.</p>
+                    <p class="mal-tl">ഹൃദയം കാണാപാഠം പഠിച്ചതുപോലെ നമ്മുടെ സംഭാഷണങ്ങൾ ഒഴുകി നീങ്ങും.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- STANZA 2 -->
+        <div class="stanza">
+            <div class="lyric-row">
+                <div class="tamil-line">5. Vizhi Neerum Veenaaga, Imai Thaanda Koodaathena</div>
+                <div class="translation-block">
+                    <p class="eng-tl">Thinking that my tears shouldn't be wasted by letting them cross my eyelids...</p>
+                    <p class="mal-tl">എന്റെ കണ്ണീർ തുള്ളികൾ വെറുതെ കൺപീലികൾ താണ്ടി പുറത്തുപോയി ضائعമാകരുതെന്ന് കരുതി...</p>
+                </div>
+            </div>
+
+            <div class="lyric-row">
+                <div class="tamil-line">6. Thuliyaaha Naan Serthen, Kadalaaha Kann Aanathe</div>
+                <div class="translation-block">
+                    <p class="eng-tl">I saved them drop by drop, and now my eyes have become an entire ocean.</p>
+                    <p class="mal-tl">ഞാൻ അവ ഓരോ തുള്ളിയായി ശേഖരിച്ചു വെച്ചു, ഇപ്പോൾ എന്റെ കണ്ണുകൾ ഒരു കടലായി മാറി കഴിഞ്ഞു.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- STANZA 3 -->
+        <div class="stanza">
+            <div class="lyric-row">
+                <div class="tamil-line">7. Maranthaalum Naan Unnai, Ninaikkaatha Naal Illaiye</div>
+                <div class="translation-block">
+                    <p class="eng-tl">Even if you happen to forget me, there is not a single day that goes by where I don't think of you.</p>
+                    <p class="mal-tl">നീ എന്നെ മറന്നാലും, ഞാൻ നിന്നെ ഓർക്കാത്ത ഒരു ദിവസം പോലും ഇല്ല.</p>
+                </div>
+            </div>
+
+            <div class="lyric-row">
+                <div class="tamil-line">8. Pirinthaalum En Anbu, Oru Pothum Poi Illaiye</div>
+                <div class="translation-block">
+                    <p class="eng-tl">Even if we are forced to part ways, my love for you will never be a lie.</p>
+                    <p class="mal-tl">നമ്മൾ പിരിഞ്ഞുപോയാലും, നിനക്കായിട്ടുള്ള എന്റെ സ്നേഹം ഒരിക്കലും ഒരു കള്ളമാകില്ല.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- STANZA 4 -->
+        <div class="stanza">
+            <div class="lyric-row">
+                <div class="tamil-line">9. Vidiyaatha Kaalaigal, Mudiyaatha Maalaigalil</div>
+                <div class="translation-block">
+                    <p class="eng-tl">Through mornings that never seem to dawn, and evenings that never seem to end...</p>
+                    <p class="mal-tl">പുലരാത്ത പ്രഭാതങ്ങളിലും, അവസാനിക്കാത്ത വൈകുന്നേരങ്ങളിലും...</p>
+                </div>
+            </div>
+
+            <div class="lyric-row">
+                <div class="tamil-line">10. Vadiyaatha Vervai Thuligal, Piriyaatha Porvai Nodigal</div>
+                <div class="translation-block">
+                    <p class="eng-tl">With sweat drops that never dry, and moments under the sheets where we never separate.</p>
+                    <p class="mal-tl">വറ്റാത്ത വിയർപ്പുതുള്ളികളോടെ, നമ്മൾ വേർപിരിയാത്ത പുതപ്പിനടിയിലെ ആ നിമിഷങ്ങളിൽ.</p>
+                </div>
+            </div>
+
+            <div class="lyric-row">
+                <div class="tamil-line">11. Manikaattum Kadigaaram, Tharum Vaathai Arindhom</div>
+                <div class="translation-block">
+                    <p class="eng-tl">We understood the quiet agony and torment that the ticking clock brings us.</p>
+                    <p class="mal-tl">സമയം കാണിക്കുന്ന ആ ക്ലോക്ക് നമുക്ക് തരുന്ന ആ വേദന നമ്മൾ അറിഞ്ഞു.</p>
+                </div>
+            </div>
+
+            <div class="lyric-row">
+                <div class="tamil-line">12. Udaimaattrum Idaivaelai, Athan Pinbe Unarndhom</div>
+                <div class="translation-block">
+                    <p class="eng-tl">The brief intervals spent changing clothes—we only truly understood their value afterwards.</p>
+                    <p class="mal-tl">വസ്ത്രം മാറുന്ന ആ ചെറിയ ഇടവേളകൾ, അതിനുശേഷമാണ് നമ്മൾ അതിന്റെ വില മനസ്സിലാക്കിയത്.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- STANZA 5 -->
+        <div class="stanza">
+            <div class="lyric-row">
+                <div class="tamil-line">13. Maravaadhe Manam, Madinthaalum Varum</div>
+                <div class="translation-block">
+                    <p class="eng-tl">This heart will never forget; even if it perishes, this love will return.</p>
+                    <p class="mal-tl">ഈ മനസ്സ് ഒരിക്കലും മറക്കില്ല, ഇത് ഇല്ലാതായാലും ഈ പ്രണയം വീണ്ടും വരും.</p>
+                </div>
+            </div>
+
+            <div class="lyric-row">
+                <div class="tamil-line">14. Muthal Nee Mudivum Nee, Alar Nee Agilam Nee</div>
+                <div class="translation-block">
+                    <p class="eng-tl">You are the beginning and you are the end; you are the blossoming joy and you are my entire universe.</p>
+                    <p class="mal-tl">ആദ്യവും നീയാണ് അവസാനവും നീയാണ്, വിരിയുന്ന പൂവും നീയാണ് എന്റെ പ്രപഞ്ചവും നീയാണ്.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- STANZA 6 -->
+        <div class="stanza">
+            <div class="lyric-row">
+                <div class="tamil-line">15. Tholaidhooram Sendraalum, Thoduvaanam Endraalum Nee</div>
+                <div class="translation-block">
+                    <p class="eng-tl">No matter how far away you go, even if you reach the distant horizon...</p>
+                    <p class="mal-tl">നീ എത്ര ദൂരേക്ക് പോയാലും, ആ അകലെയുള്ള തൊടുവാനത്തോളം പോയാലും...</p>
+                </div>
+            </div>
+
+            <div class="lyric-row">
+                <div class="tamil-line">16. Vizhiyoram Thaane Marainthaai, Uyirodu Munbe Kalanthaai</div>
+                <div class="translation-block">
+                    <p class="eng-tl">You only disappeared from the corner of my eyes, but you had already blended into my very soul long ago.</p>
+                    <p class="mal-tl">നീ എന്റെ കൺകോണുകളിൽ നിന്ന് മാത്രമാണ് മറഞ്ഞത്, എന്നാൽ എന്റെ ജീവനിലേക്ക് നീ മുൻപേ തന്നെലിഞ്ഞു ചേർന്നിരുന്നു.</p>
+                </div>
+            </div>
+
+            <div class="lyric-row">
+                <div class="tamil-line">17. Ithazh Ennum Malar Kondu Kadithangal Varainthaai</div>
+                <div class="translation-block">
+                    <p class="eng-tl">Using your flower-like lips, you wrote me silent letters.</p>
+                    <p class="mal-tl">ഇതളുകൾ പോലുള്ള നിന്റെ ചുണ്ടുകൾ കൊണ്ട് നീ എനിക്ക് കത്തുകൾ വരച്ചിട്ടു.</p>
+                </div>
+            </div>
+
+            <div class="lyric-row">
+                <div class="tamil-line">18. Bathil Naanum Tharum Munbe Kanavaagi Kalainthaai</div>
+                <div class="translation-block">
+                    <p class="eng-tl">But before I could give you my reply, you vanished like a fading dream.</p>
+                    <p class="mal-tl">മറുപടി ഞാൻ തരുന്നതിന് മുൻപേ തന്നെ, നീ ഒരു സ്വപ്നം പോലെ മാഞ്ഞുപോയി.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- STANZA 7 -->
+        <div class="stanza">
+            <div class="lyric-row">
+                <div class="tamil-line">19. Pidivaatham Pidi, Sinam Theerum Adi</div>
+                <div class="translation-block">
+                    <p class="eng-tl">Be as stubborn as you want; let all your anger break out until it's entirely exhausted.</p>
+                    <p class="mal-tl">നീ നിന്റെ വാശി കാണിച്ചോളൂ, നിന്റെ ദേഷ്യം തീരുന്നതുവരെ അത് പുറത്തെടുത്തോളൂ.</p>
+                </div>
+            </div>
+
+            <div class="lyric-row">
+                <div class="tamil-line">20. Izhandhøm Ezhil Kolam, Inimel Mazhai Kaalam</div>
+                <div class="translation-block">
+                    <p class="eng-tl">We have lost our beautiful, serene world; from here on out, it is going to be the rainy season (of tears/longing).</p>
+                    <p class="mal-tl">ആ മനോഹരമായ കോലങ്ങൾ നമുക്ക് നഷ്ടമായിരിക്കുന്നു, ഇനി അങ്ങോട്ട് മഴക്കാലമാണ് (വിരഹത്തിന്റെ കണ്ണീർക്കാലമാണ്).</p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Interactive Lyrics Translation Hub. Optimized for Music Lovers.</p>
+    </footer>
+
+    <!-- INTERACTIVE SCRIPT -->
+    <script>
+        const rows = document.querySelectorAll('.lyric-row');
+        const toggleAllBtn = document.getElementById('toggleAllBtn');
+        let allExpanded = false;
+
+        // Individual line toggle logic
+        rows.forEach(row => {
+            row.addEventListener('click', () => {
+                row.classList.toggle('active');
+            });
+        });
+
+        // Global master expand/collapse button logic
+        toggleAllBtn.addEventListener('click', () => {
+            allExpanded = !allExpanded;
+            rows.forEach(row => {
+                if (allExpanded) {
+                    row.classList.add('active');
+                } else {
+                    row.classList.remove('active');
+                }
+            });
+            toggleAllBtn.innerText = allExpanded ? "Collapse All Meanings" : "Expand All Meanings";
+        });
+    </script>
+</body>
+  </html>
