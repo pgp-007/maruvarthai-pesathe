@@ -9,7 +9,7 @@
     <meta name="description" content="Complete line-by-line translation and profound meaning of the rare 2017 single promotional version of Maruvarthai Pesathe from Enai Noki Paayum Thota in English and Malayalam.">
     <meta name="keywords" content="maruvarthai pesathe lyrics meaning, maruvarthai pesathe english translation, maruvarthai pesathe malayalam meaning, madi meethu nee thoongidu lyrics, thamarai promotional version lyrics, enai noki paayum thota, lyrical translation">
     <meta name="robots" content="index, follow">
-
+    
     <!-- OPEN GRAPH (FOR SOCIAL MEDIA SHARING) -->
     <meta property="og:title" content="Maruvarthai Pesathe Lyrics Meaning | Interactive Line-by-Line Translation">
     <meta property="og:description" content="Explore the beautiful line-by-line translation of the promotional version of Maruvarthai Pesathe in English and Malayalam. Click lines to unlock the depth.">
@@ -51,7 +51,7 @@
 
         header {
             text-align: center;
-            padding: 60px 20px 40px;
+            padding: 50px 20px 20px;
             max-width: 800px;
             margin: 0 auto;
         }
@@ -78,6 +78,23 @@
             max-width: 600px;
             margin: 0 auto;
             color: #8f9499;
+        }
+
+        /* NEW HERO IMAGE CONTAINER FOR PREVIEW IMAGE */
+        .hero-image-container {
+            max-width: 500px;
+            margin: 30px auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .hero-image {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 1px rgba(197, 160, 89, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.05);
         }
 
         .controls {
@@ -158,7 +175,7 @@
         }
 
         .lyric-row.active .translation-block {
-            max-height: 500px; /* arbitrary large value for smooth expand */
+            max-height: 500px; 
             opacity: 1;
             transition: max-height 0.4s cubic-bezier(1, 0, 1, 0);
             padding-top: 10px;
@@ -193,6 +210,7 @@
             body { padding: 10px; }
             .stanza { padding: 12px; }
             .tamil-line { font-size: 1rem; }
+            .hero-image-container { max-width: 100%; }
         }
     </style>
 </head>
@@ -205,6 +223,11 @@
             An interactive, complete line-by-line translation of Thamarai's original 2017 promotional cut lyrics from <em>Enai Noki Paayum Thota</em>. Tap any line to unlock its hidden depths.
         </p>
     </header>
+
+    <!-- NEW INTERACTIVE IMAGE PLACEMENT -->
+    <div class="hero-image-container">
+        <img src="preview.png" alt="Maruvarthai Pesathe Movie Poster Banner" class="hero-image">
+    </div>
 
     <div class="controls">
         <button class="btn" id="toggleAllBtn">Expand All Meanings</button>
@@ -261,7 +284,7 @@
                 <div class="tamil-line">6. Thuliyaaha Naan Serthen, Kadalaaha Kann Aanathe</div>
                 <div class="translation-block">
                     <p class="eng-tl">I saved them drop by drop, and now my eyes have become an entire ocean.</p>
-                    <p class="mal-tl">ഞാൻ അവ ഓരോ തുള്ളിയായി ശേഖരിച്ചു വെച്ചു, ഇപ്പോൾ എന്റെ കണ്ണുകൾ ഒരു കടലായി മാറി കഴിഞ്ഞു.</p>
+                    <p class="mal-tl">ഞാൻ അവ ഓരോ thulliyaayi ശേഖരിച്ചു വെച്ചു, ഇപ്പോൾ എന്റെ കണ്ണുകൾ ഒരു കടലായി മാറി കഴിഞ്ഞു.</p>
                 </div>
             </div>
         </div>
@@ -405,14 +428,12 @@
         const toggleAllBtn = document.getElementById('toggleAllBtn');
         let allExpanded = false;
 
-        // Individual line toggle logic
         rows.forEach(row => {
             row.addEventListener('click', () => {
                 row.classList.toggle('active');
             });
         });
 
-        // Global master expand/collapse button logic
         toggleAllBtn.addEventListener('click', () => {
             allExpanded = !allExpanded;
             rows.forEach(row => {
@@ -426,4 +447,4 @@
         });
     </script>
 </body>
-  </html>
+        </html>
